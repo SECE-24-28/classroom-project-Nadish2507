@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Shop</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">MobileShop</h1>
+      <ul class="flex space-x-6 text-gray-600">
+        <li class="hover:text-blue-600 cursor-pointer">Home</li>
+        <li class="hover:text-blue-600 cursor-pointer">Products</li>
+        <li class="hover:text-blue-600 cursor-pointer">Contact</li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="bg-blue-600 text-white py-16 text-center">
+    <h2 class="text-4xl font-bold">Latest Smartphones Available</h2>
+    <p class="mt-2 text-lg">Best prices, official warranty, fast delivery</p>
+    <button class="mt-5 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+      Shop Now
+    </button>
+  </section>
+
+  <!-- Products Section -->
+  <section class="max-w-6xl mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">Featured Phones</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Product Card -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="iphone14pro.png" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">iPhone 14 Pro</h3>
+          <p class="text-gray-600 mt-2">128GB · Deep Purple</p>
+          <p class="text-blue-600 font-bold text-xl mt-2">$999</p>
+          <button class="mt-3 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="samsungs23ultra.png" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Samsung S23 Ultra</h3>
+          <p class="text-gray-600 mt-2">256GB · Phantom Black</p>
+          <p class="text-blue-600 font-bold text-xl mt-2">$1199</p>
+          <button class="mt-3 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="pixel7.png" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Google Pixel 7</h3>
+          <p class="text-gray-600 mt-2">128GB · Snow White</p>
+          <p class="text-blue-600 font-bold text-xl mt-2">$699</p>
+          <button class="mt-3 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Buy Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 MobileShop — All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

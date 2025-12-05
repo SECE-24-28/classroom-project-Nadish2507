@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nadish R — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0f172a;color:white;line-height:1.6;}
+header{padding:20px 50px;display:flex;justify-content:space-between;align-items:center;background:#0b1324;position:sticky;top:0;z-index:10;}
+header h1{font-size:24px;font-weight:700;color:#60a5fa;}
+nav a{margin-left:20px;text-decoration:none;color:#cbd5e1;font-weight:400;transition:.3s;}
+nav a:hover{color:#60a5fa;}
+section{padding:80px 50px;}
+.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;height:90vh;}
+.hero h2{font-size:48px;font-weight:700;color:#60a5fa;}
+.hero p{margin-top:10px;font-size:18px;color:#cbd5e1;max-width:700px;}
+.btn{margin-top:25px;padding:12px 28px;background:#60a5fa;color:black;font-weight:600;border:none;border-radius:6px;cursor:pointer;font-size:16px;text-decoration:none;}
+.about,.skills,.projects,.education,.contact{max-width:1100px;margin:auto;}
+h3.section-title{font-size:32px;font-weight:700;color:#60a5fa;margin-bottom:25px;text-align:center;}
+.skills-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;margin-top:20px;}
+.skill-box{background:#1e293b;padding:15px;border-radius:8px;text-align:center;font-weight:600;}
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-top:25px;}
+.project-card{background:#1e293b;padding:20px;border-radius:12px;transition:.3s;}
+.project-card:hover{transform:scale(1.03);}
+.project-card h4{font-size:20px;font-weight:600;color:#60a5fa;}
+.project-card p{margin-top:10px;color:#cbd5e1;font-size:14px;}
+.education-box{background:#1e293b;padding:20px;border-radius:12px;margin-top:20px;}
+.contact-form input,.contact-form textarea{width:100%;padding:12px;border:none;border-radius:6px;margin-top:10px;background:#1e293b;color:white;}
+.contact-form button{padding:12px 28px;background:#60a5fa;color:black;font-weight:600;border:none;border-radius:6px;cursor:pointer;margin-top:20px;}
+footer{text-align:center;padding:20px;color:#94a3b8;font-size:14px;margin-top:40px;background:#0b1324;}
+@media(max-width:768px){
+.hero h2{font-size:36px;}
+header{flex-direction:column;}
+nav{margin-top:10px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Nadish R</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>AI & ML Engineer</h2>
+    <p>Dedicated AI/ML engineering student with hands-on experience in machine learning, deep learning, computer vision, and full-stack Python development.</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about" class="about">
+    <h3 class="section-title">About Me</h3>
+    <p>
+        I am an aspiring AI & ML engineer with experience in Python, data science,
+        neural networks, computer vision, and web development. I enjoy building practical
+        applications such as recommendation systems, deep-learning models and interactive games.
+    </p>
+</section>
+
+<section id="skills" class="skills">
+    <h3 class="section-title">Skills</h3>
+    <div class="skills-list">
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Machine Learning</div>
+        <div class="skill-box">Deep Learning</div>
+        <div class="skill-box">Streamlit</div>
+        <div class="skill-box">TensorFlow</div>
+        <div class="skill-box">OpenCV</div>
+        <div class="skill-box">HTML/CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Data Visualization</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h4>Movie Recommendation System</h4>
+            <p>Developed a content-based movie recommender using Python, Streamlit, TF-IDF vectors, and cosine similarity. Includes genre filtering, poster display, and search features.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>2D Parkour Game</h4>
+            <p>A browser-based 2D platformer built using HTML5 Canvas and JavaScript. Features jumping physics, obstacles, scoring, and smooth animation.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Safety Helmet Detection (Deep Learning)</h4>
+            <p>Implemented a computer vision model using CNNs and OpenCV to detect helmet violations in real-time.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="education" class="education">
+    <h3 class="section-title">Education</h3>
+    <div class="education-box">
+        <h4>B.Tech – Artificial Intelligence & Machine Learning</h4>
+        <p>Knowledge Institute of Technology (Autonomous), Salem</p>
+        <p>Expected Graduation: 2026</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h3 class="section-title">Contact Me</h3>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 Nadish R — All Rights Reserved
+</footer>
+
+</body>
+</html>
